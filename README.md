@@ -14,4 +14,4 @@
 * Forum
 * Notifications
 
-https://docs.flutter.dev/
+<a href="https://docs.flutter.dev/" target="_blank">https://docs.flutter.dev</a>
