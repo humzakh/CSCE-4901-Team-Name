@@ -11,9 +11,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: _title,
-      home: Scaffold(
+      theme: ThemeData(
+        primaryColor: const Color(0xFF00853e),
+        inputDecorationTheme: const InputDecorationTheme(
+          floatingLabelStyle: TextStyle(color: Color(0xFF00853e)),
+          focusedBorder: OutlineInputBorder(
+            borderSide: BorderSide(color: Color(0xFF00853e)),
+          ),
+        ),
+        textSelectionTheme: const TextSelectionThemeData(
+          cursorColor: Color(0xFF00853e),
+        ),
+      ),
+      home: const Scaffold(
         // appBar: AppBar(
         //    title: const Text(_title),
         //    backgroundColor: const Color(0xFF00853e)),
@@ -118,7 +130,8 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               ],
             ),
           ],
-        ));
+        )
+    );
   }
 }
 
